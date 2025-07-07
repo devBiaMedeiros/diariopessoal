@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diario Pessoal Bia Medeiros</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>Querido Diario...</h1>   
+        </header>
+        <section class="introduçao" >
+            <h2> Hoje é dia <time datetime="2025-07-07"> 07 de Julho de 2025 </time> e o meu humor está:</h2>
+            <div id="reacoes-humor">
+                <button class="reacao" id="feliz"><img src="./assets/sorrindo.png" alt="emoji-sorrindo"></button>
+                <button class="reacao" id="triste"><img src="./assets/triste.png" alt="emoji-triste"></button>
+                <button class="reacao" id="animada"><img src="./assets/indiferente.png" alt="emoji-indiferente"></button>
+                <button class="reacao" id="confusa"><img src="./assets/mimindo.png" alt="emoji-dormindo"></button>
+                <button class="reacao" id="nervosa"><img src="./assets/raiva.png" alt="emoji-raiva"></button>
+            </div>
+        </section>
+
+        <section id="acontecimentos">
+            <h2>Acontecimentos do meu dia..</h2>
+            <p>
+                Hoje eu conclui a aula de HTML e CSS do curso Desenvolver, me sinto muito feliz 
+                com o meu progresso.
+                Foi uma experiência incrível aprender sobre as tags, atributos e como estruturar uma página web.
+            </p>
+        </section>
+
+        <section id="metas">
+            <h2>Novas Metas:</h2>
+            <p>
+                Minha meta agora é praticar mais, criar projetos pequenos e aplicar o que aprendi.
+                Quero me tornar proficiente em HTML e CSS para poder avançar para JavaScript e outras tecnologias web.
+            </p>
+        </section>
+        
+        <section id="reflexoes">
+            <h2>Reflexões do dia:</h2>
+            <p>
+                Cada linha de código que escrevo me aproxima mais do meu objetivo.
+                Estou animada para continuar essa jornada e ver onde ela me levará.
+            </p>
+        </section>
+
+        <section id="falta" >
+            <h2>O que falta:</h2>
+            <ul>
+                <li>Estudar mais HTML</li>
+                <li>Se aprofundar no Css</li>
+                <li>Iniciar JavaScript</li>
+                <li>Conhecer Python</li>
+                <li>Estudar Boas Práticas</li> 
+            </ul>
+        </section>
+
+        <section id="aprendi">
+            <h2>O que eu aprendi:</h2>
+            <p>
+             Estou aprendendo sobre a estrutura básica de um documento HTML, como usar tags para criar títulos, parágrafos e listas.
+                Também aprendi sobre CSS e como estilizar elementos HTML para melhorar a aparência da página.
+            </p>
+        </section>
+        
+        <section id="frase">
+            <h2>Frase que define o Dia</h2>
+            <p>SOCORRO DEUS!!</p>
+        </section>
+
+        <footer>
+            <p>Meu Diario - 2025</p>
+        </footer>
+
+        <script>
+            const botoes = document.querySelectorAll('.reacao');
+
+            botoes.forEach(botao => {
+            botao.addEventListener('click', () => {
+            botao.classList.add('ativa');
+});
+});
+        </script>
+
+    </body>
+</html>
